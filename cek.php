@@ -1,0 +1,4 @@
+<?php
+// jika belum login
+
+?>
