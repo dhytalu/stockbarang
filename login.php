@@ -11,12 +11,10 @@
         // hitung data yg ada pada table
         $hitung = mysqli_num_rows($cekdatabase);
         if ($hitung>0){
-            // $_SESSION['log']    = 'true';
-            // header('location:index.php');
-            echo 'Ada datamu';
+            $_SESSION['log']    = 'true';
+            header('location:index.php');
         } else {
-            // header('location:login.php');
-            echo 'Tidak ada datamu!!';
+            header('location:login.php');
         }
     }
 
