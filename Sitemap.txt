@@ -8,5 +8,7 @@ Membuat Aplikasi Stock Barang Berbasis Web (PHP & MYSQL)
 
 Sitemap
 - Login
-- Home Stock barang
-- Barang keluar
+- Home : Stock barang
+- Barang Keluar
+- Barang Masuk
+- Logout
