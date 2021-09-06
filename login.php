@@ -8,13 +8,15 @@
 
         // cocokin dengan database apakah data ada atau tidak
         $cekdatabase    = mysqli_query($conn,"SELECT* FROM login WHERE email = '$email' and password = '$password' ");
-        // hotung data yg ada pada table
+        // hitung data yg ada pada table
         $hitung = mysqli_num_rows($cekdatabase);
         if ($hitung>0){
-            $_SESSION['log']    = 'true';
-            header('location:index.php');
+            // $_SESSION['log']    = 'true';
+            // header('location:index.php');
+            echo 'Ada datamu';
         } else {
-            header('location:login.php');
+            // header('location:login.php');
+            echo 'Tidak ada datamu!!';
         }
     }
 
